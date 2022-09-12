@@ -1,0 +1,15 @@
+lista=[]
+numero=3
+cont2=1
+while cont2<=10000:
+    primoN=True
+    for i in range(3, numero):
+        if(numero%i==0):
+            primoN=False
+            break
+    if primoN == True:
+        lista.append(numero)
+        cont2+=1          
+    numero+=2   
+print(lista)        
+print("Total de números primos encontrados:", len(lista))   
